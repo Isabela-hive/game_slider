@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  border: solid 2px black;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.input:focus-within {
+  border: solid 2px green;
+}
+
+.input:focus-within > input {
+  color: green;
+}
+
+.input > input {
+  outline: none;
+  border: none;
+  background: none;
+  margin: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.radar {
+  width: 60vw;
+  height: 40px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.radar .slider {
+  resize: horizontal;
+  height: calc(100% - 4px);
+  border-radius: 2px;
+  margin: 2px;
+  min-width: 10%;
+  max-width: calc(100% - 4px);
+  width: auto;
+  background-color: black;
+  overflow: auto;
+}
